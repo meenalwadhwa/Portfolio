@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meenal Wadhwa's Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #eaeaea; /* Lighter gray background */
+            color: #333;
+        }
+        header {
+            background-color: #003366; /* Darker background */
+            color: white;
+            padding: 2.5em 0;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 3em; /* Larger font size for the title */
+            letter-spacing: 3px;
+            font-family: 'Playfair Display', serif;
+            font-weight: 600; /* Make header bold */
+        }
+        header p {
+            font-size: 1.4em; /* Increase font size for better readability */
+            margin-top: 0.5em;
+            font-weight: 400;
+            font-family: 'Playfair Display', serif;
+
+        }
+        nav {
+            display: flex;
+            background-color: #0055b8;
+            padding: 1.2em;
+            text-align: justify;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 1em 2em;
+            font-size: 1.2em; /* Slightly larger font size for navigation */
+            font-family: 'Playfair Display', serif;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            font-weight: 500;
+        }
+        nav a:hover {
+            background-color: #0077cc;
+            transition: background-color 0.3s ease;
+        }
+        section {
+            padding: 3em 5%;
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: justify;
+        }
+        h2 {
+            text-align: center;
+            color: #003366;
+            font-size: 2.5em; /* Increased font size */
+            font-family: 'Playfair Display', serif;
+            margin-bottom: 2em;
+            font-weight: 600; /* Bold subtitle */
+        }
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 2.5em;
+        }
+        .project-card {
+            background-color: white;
+            padding: 2em;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            text-align: justify;
+            transition: transform 0.3s ease;
+            overflow: hidden;
+
+        }
+        .project-card:hover {
+            transform: translateY(-15px);
+        }
+        .project-card h3 {
+            color: #0055b8;
+            font-size: 1.6em; /* Increased font size for project titles */
+            font-family: 'Playfair Display', serif;
+            margin: 1em 0;
+            font-weight: 600;
+        }
+        .project-card p {
+            color: #666;
+            font-size: 1.1em; /* Slightly larger font size for descriptions */
+            font-family: 'Playfair Display', serif;
+            margin-botom: 1.5em;
+            line-height: 1.6; /* Improved line spacing */
+        }
+        .project-card img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+        .project-card img:hover {
+            transform: scale(1.05);
+        }
+        footer {
+            background-color: #003366;
+            color: white;
+            text-align: center;
+            padding: 2em 0;
+            font-size: 1.2em;
+        }
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+        .contact-container {
+            text-align: center;
+            font-size: 1.2em;
+            color: #333;
+            margin-top: 2em;
+            font-family: 'Playfair Display', serif;
+
+        }
+        .contact-info {
+            list-style-type: none;
+            padding: 0;
+        }
+        .contact-info li {
+            margin-bottom: 1em;
+        }
+        .contact-info a {
+            color: #0055b8;
+            text-decoration: none;
+        }
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        .about-image {
+    width: 300px; /* Increased size for a larger image */
+    height: 300px; /* Matches width for a perfect square */
+    border-radius: 0; /* Removes rounding for square shape */
+    margin-right: 2.5em; /* Balanced spacing */
+    border: 6px solid #f8f9fa; /* Subtle border with a light color */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Adds hover effect */
+}
+
+/* Add hover effect for interactivity */
+.about-image:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3); /* More pronounced shadow */
+}
+
+
+
+        .about-text {
+            max-width: 850px; /* Limit text width for better layout */
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meenal Wadhwa's Portfolio</h1>
+        <p>Experienced IT Professional | Ex- Accenture | MS Management and Systems, NYU SPS | Event Director, MSSA @ NYU | Seeking Full-Time Opportunities</p>
+    </header>
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <section id="about">
+        <h2 style="font-family: 'Open Sans', sans-serif; font-size: 2em; color: #333;">About Me</h2>
+        <div class="about" style="display: flex; align-items: flex-start; gap: 20px;">
+            <img src="LinkedInProfilePic.png" alt="Meenal Wadhwa" class="about-image">
+            <div class="about-text" style="max-width: 600px;">
+                <p style="font-family: 'Open Sans', sans-serif; font-size: 1.1em; color: #555; line-height: 1.6;">
+                    Welcome to my portfolio! I am an IT professional with a background in software engineering, data analytics, and systems optimization. I enjoy using technology to solve complex business challenges and improve efficiency.
+                </p>
+                <p style="font-family: 'Open Sans', sans-serif; font-size: 1.1em; color: #555; line-height: 1.6;">
+                    I am currently pursuing my Master’s in Management and Systems at NYU SPS, where I am gaining advanced knowledge and practical skills to succeed in today’s tech-driven world.
+                </p>
+                <p style="font-family: 'Open Sans', sans-serif; font-size: 1.1em; color: #555; line-height: 1.6;">
+                    I look forward to new challenges and opportunities where I can make a meaningful impact by applying my expertise in IT and analytics.
+                </p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="projects">
+            <div class="project-card">
+                <img src="Flexdashboards.png" alt="Real-Time FlexDashboard">
+                <h3>Real-Time FlexDashboard</h3>
+                <p>Developed an interactive FlexDashboard that integrates real-time data from the News API and HR system, enabling users to explore and visualize news articles across a wide range of categories.</p>
+            </div>
+            <div class="project-card">
+                <img src="Chatbot.png" alt="Syllabus Chatbot using RAG">
+                <h3>Business Reporting Automation</h3>
+                <p>Developed a Python Flask-based syllabus chatbot using RAG (Retrieval-Augmented Generation) to provide students and faculty with quick access to syllabus details, assignments, and deadlines, automating routine queries and improving student engagement.</p>
+            </div>
+            <div class="project-card">
+                <img src="ShinyAppscombined.png" alt="Shiny App for Assessment Visualization">
+                <h3>Shiny App for Assessment Visualization</h3>
+                <p>Built a Shiny app designed for interactive student assessment visualization with features like box plots, assignment filtering, and grade trends. Additionally built a world economic indicators explorer shiny app.</p>
+            </div>
+            <div class="project-card">
+                <img src="Youtube.png" alt="YouTube Data-Driven Insights">
+                <h3>YouTube Data-Driven Insights</h3>
+                <p>Analyzed YouTube performance data, extracting valuable insights on engagement metrics such as views, likes, and watch time, to optimize content strategy.</p>
+            </div>
+            <div class="project-card">
+                <img src="gesture conversion.png" alt="Gesture-Based Communication System">
+                <h3>Gesture-Based Communication System</h3>
+                <p>Developed a system using MATLAB for real-time gesture recognition through webcam, providing an alternative communication method for specially abled people.</p>
+            </div>
+            <div class="project-card">
+                <img src="Visitor Log Application.png" alt="Visitor Log Application">
+                <h3>Visitor Log Application</h3>
+                <p>Created an Android-based visitor log app with OTP authentication via Firebase, automating visitor management and ensuring secure access control.</p>
+            </div>
+            <div class="project-card">
+                <img src="chattingapp_project.png" alt="Chatting Application">
+                <h3>Chatting Application</h3>
+                <p>Built a web-based chat application using Java and HTML, enabling real-time communication and efficient message management, including group chats and notifications.</p>
+            </div>
+            <!-- Project 8 -->
+            <div class="project-card">
+                <img src="Datamining_UnsupervisedLearning_project.png" alt="E-Commerce Data Mining">
+                <h3>E-Commerce Data Mining</h3>
+                <p>Implemented unsupervised learning and clustering techniques to analyze e-commerce transactions, uncovering purchasing patterns and customer segments.</p>
+            </div>
+            <!-- Project 9 -->
+            <div class="project-card">
+                <img src="mssa_open_meet.png" alt="Online Book Store">
+                <h3>Online Book Store</h3>
+                <p>Developed a fully functional online book store with advanced search options and a secure payment gateway using HTML and CSS.</p>
+            </div>
+            <!-- Project 10 -->
+            <div class="project-card">
+                <img src="Brightspace_quiz_add.png" alt="R Programming: AI-Enhanced Quiz"> <!-- Replace with project image -->
+                <h3>R Programming: Course Development in LMS </h3>
+                <p>Added interactive R Programming quiz questions and solutions to excercises Brightspace, the university's LMS. The quizzes cover topics from basic syntax to advanced data analysis, with solutions and step-by-step explanations to help students enhance their skills and receive immediate feedback..</p>
+            </div>
+            <div class="project-card">
+                <img src="msqm_qa.png" alt="MSQM Masters QA Testing"> <!-- Replace with project image -->
+                <h3>MSQM Masters QA Testing </h3>
+                <p>Performed Quality Assurance testing for the MSQM program,  to ensure reliability and improve the user experience for students.</p>
+            </div>
+            <div class="project-card">
+                <img src="SOD.png" alt="Segregation of Duties with Oracle NetSuite"> <!-- Replace with project image -->
+                <h3>Segregation of Duties with Oracle NetSuite</h3>
+                <p>Implemented Segregation of Duties (SOD) controls in Oracle NetSuite to enhance internal controls and reduce fraud risks.</p>
+            </div>
+            <div class="project-card">
+                <img src="h&M.png" alt="H&M E-Commerce System"> <!-- Replace with project image -->
+                <h3>H&M E-Commerce Monitoring</h3>
+                <p>Developed  real-time monitoring systems using Splunk for incident tracking and operational optimization across H&M's e-commerce brands.</p>
+            </div>
+    </section>
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <div class="contact-container">
+            <p>If you'd like to get in touch with me, feel free to reach out via any of the contact methods below:</p>
+            <ul class="contact-info">
+                <li>Email: <a href="mailto:meenal.wadhwa@gmail.com">meenal.wadhwa@gmail.com</a></li>
+                <li>LinkedIn: <a href="https://www.linkedin.com/in/meenal-wadhwa/" target="_blank">LinkedIn Profile</a></li>
+            </ul>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 Meenal Wadhwa | All rights reserved</p>
+    </footer>
+</body>
+</html>
